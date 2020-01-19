@@ -9,7 +9,7 @@ namespace Shiboleth.Authentication
             this AuthenticationBuilder builder,
             Action<ShibolethAuthenticationOptions> configureOptions)
         {
-            return builder.AddShibboleth(ShibbolethAuthenticationProperties.SchemeName, configureOptions);
+            return builder.AddShibboleth(ShibbolethAuthenticationProperties.DefaultScheme, configureOptions);
         }
 
         public static AuthenticationBuilder AddShibboleth(
